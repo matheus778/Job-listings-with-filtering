@@ -10,10 +10,24 @@
 .filter-content {
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.bg-image {
+  width: 100%;
+  height: 100px;
+  background-image: url('../../assets/bg-header-desktop.svg');
+}
+
+@media(max-width:600px){
+  .bg-image {
+    height: 300px;
+    background-image: url('../../assets/bg-header-mobile.svg');
+  }
 }
 
 .filter {
-  width: 100%;
+  width: 90%;
   background-color: var(--cyan-100);
   max-width: 900px;
   margin: 0 auto;

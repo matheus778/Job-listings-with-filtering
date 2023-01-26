@@ -1,5 +1,5 @@
 .card {
-  width: 100%;
+  width: 90%;
   max-width: 900px;
   margin: 0 auto;
   padding: 2.5rem;
@@ -114,4 +114,31 @@
 .card .tags a:hover {
   background-color: var(--primary);
   color: var(--cyan-100);
+}
+
+@media(max-width: 886px) {
+  .card {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .tags {
+    position: relative;
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+  .tags:before{
+    position: absolute;
+    content: '';
+    width: 90%;
+    height: 2px;
+    transform: translateY(-10px);
+    opacity: 0.2;
+    background-color: var(--cyan-200);
+  }
+
+  .card .info {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
