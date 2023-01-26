@@ -1,0 +1,62 @@
+.header {
+  width: 100%;  
+  background-color: var(--primary);
+}
+
+.header img {
+  width: 100%;
+}
+
+.filter {
+  width: 100%;
+  background-color: var(--cyan-100);
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5rem;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.336);
+  transform: translateY(-40px)
+}
+
+.filter-selected {
+  background-color: var(--bg);
+  color: var(--primary);
+  font-weight: 700;
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+.filter-selected div.remove {
+  width: 30px;
+  height: 34px;
+  background-color: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 5px 5px 0;
+  transition: background 500ms;
+  cursor: pointer;
+}
+
+.filter-selected div.remove:hover {
+  background-color: var(--cyan-300);
+}
+
+.filter .clear {
+  font-weight: 700;
+  color: var(--primary);
+  text-decoration-color: var(--primary);
+  font-size: 1.7rem;
+  transition: opacity 500ms;
+}
+
+.filter .clear:hover {
+  opacity: 0.7;
+}
