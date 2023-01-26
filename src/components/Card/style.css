@@ -1,0 +1,116 @@
+.card {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2.5rem;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.336);
+  background-color: var(--cyan-100);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  border-left: 5px solid var(--primary);
+}
+
+.card .info {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.card .info img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.card .info .details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card .info .details div:nth-child(1) {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.card .info .details div:nth-child(1) span:first-child {
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
+.card .info .details div:nth-child(1) a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  padding: 12px 15px;
+  line-height: 0;
+  text-align: center;
+  border-radius: 15px;
+  cursor: unset;
+}
+
+.card .info .details div:nth-child(1) a:nth-child(2) {
+  background-color: var(--primary);
+  margin-left: 1.2rem;
+}
+
+.card .info .details div:nth-child(1) a:nth-child(3) {
+  background-color: var(--cyan-300);
+}
+
+.card .info .details h2 {
+  color: var(--cyan-300);
+  cursor: pointer;
+  transition: all 500ms;
+}
+
+.card .info .details h2:hover {
+  color: var(--primary);
+}
+
+.card .info .details div:nth-child(3) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.card .info .details div:nth-child(3) span {
+  font-size: 1.7rem;
+  color: var(--cyan-200);
+}
+
+.card .info .details div:nth-child(3) .dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--cyan-200);
+}
+
+.card .tags {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.card .tags a {
+  text-decoration: none;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--primary);
+  padding: 10px 5px;
+  text-align: center;
+  background-color: var(--bg);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 500ms;
+}
+
+.card .tags a:hover {
+  background-color: var(--primary);
+  color: var(--cyan-100);
+}
