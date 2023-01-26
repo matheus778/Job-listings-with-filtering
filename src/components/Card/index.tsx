@@ -1,35 +1,70 @@
 import './style.css';
 
-export function Card () {
+
+interface CardProps {
+  id: number;
+  company: string;
+  logo: string;
+  new: boolean;
+  featured: boolean;
+  position: string;
+  role: string;
+  level: string;
+  postedAt: string;
+  contract: string;
+  location: string;
+  languages: Array<string>;
+  tools: Array<string>;
+}
+
+export function Card (props: CardProps) {
+  const locahost = 'http://localhost:5173/src/data';
+
+  let featuredBorderColor = props.featured ? 'var(--primary)': 'var(--cyan-100)'
+  
   return (
-    <div className="card">
+    <div className="card" style={{
+      borderColor: featuredBorderColor
+    }}>
       <div className="info">
-        <img src="https://images.unsplash.com/photo-1562176564-0280c730d87c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8MTEzMDI5OXx8ZW58MHx8fHw%3D&dpr=1&auto=format&fit=crop&w=294&q=60" alt="" />
+        <img src={`${locahost}${props.logo}`} alt="" />
         <div className="details">
           <div>
-            <span>Photoshop</span>
-            <a href="#">NEW</a>
-            <a href="#">FETURED</a>
+            <span>{props.company}</span>
+
+            {props.new && <a href="#">NEW</a> }
+            {props.featured &&  <a href="#">FEATURED</a> }
+
           </div>
 
-          <h2>Senior Frontend Developer</h2>
+          <h2>{props.position}</h2>
 
           <div>
-            <span>1d ago</span>
+            <span>{props.postedAt}</span>
               <div className="dot"></div>
-            <span>full time</span>
+            <span>{props.contract}</span>
               <div className="dot"></div>
-            <span>Usa only</span>
+            <span>{props.location}</span>
           </div>
         </div>
       </div>
 
       <div className="tags">
-        <a href="#">Frontend</a>
-        <a href="#">Senior</a>
-        <a href="#">HTML</a>
-        <a href="#">CSS</a>
-        <a href="#">JavaScript</a>
+        <a href="#">{props.role}</a>
+
+        <a href="#">{props.level}</a>
+
+        {props.languages.map((lang, index) => {
+          return (
+            <a key={`${props.id}${index}`} href="#">{lang}</a>
+          )
+        })}
+
+        {props.tools.map((tool, index) => {
+          return (
+            <a key={`${props.id}${index}`} href="#">{tool}</a>
+          )
+        })}
       </div>
     </div>
     

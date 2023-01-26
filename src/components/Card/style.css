@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: space-between;
   border-radius: 10px;
-  border-left: 5px solid var(--primary);
+  border-left: 5px solid;
 }
 
 .card .info {
@@ -87,6 +87,7 @@
 .card .info .details div:nth-child(3) .dot {
   width: 5px;
   height: 5px;
+  margin: 0 10px;
   border-radius: 50%;
   background-color: var(--cyan-200);
 }
