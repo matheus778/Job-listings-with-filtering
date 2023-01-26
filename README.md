@@ -15,4 +15,4 @@ Vercel: https://job-listings-with-filtering-three.vercel.app/
 
 ![Captura da Web_26-1-2023_172224_job-listings-with-filtering-three vercel app](https://user-images.githubusercontent.com/57428641/214945035-f1e5884b-b7c5-47ea-a3e0-2da605597da0.jpeg)
 
-![Captura da Web_26-1-2023_17249_job-listings-with-filtering-three vercel app](https://user-images.githubusercontent.com/57428641/214945112-23140f59-65b7-4e96-bf95-0e2ee26aac3a.jpeg)
+![job-listings-with-filtering-three vercel app_(iPhone XR)](https://user-images.githubusercontent.com/57428641/214947465-f429aa17-7cf4-4e43-b32f-9743fbb19d1a.png)
