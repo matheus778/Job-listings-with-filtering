@@ -43,7 +43,7 @@ export function Card (props: CardProps) {
       borderColor: featuredBorderColor
     }}>
       <div className="info">
-        <img src={`${locahost}${props.logo}`} alt="" />
+        <img src={props.logo} alt="" />
         <div className="details">
           <div>
             <span>{props.company}</span>
